@@ -1,0 +1,16 @@
+.pokemonDisplay {
+    display: grid;
+    grid-gap: 20px
+    padding;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+}
+.pokemonDisplay .pokemonCard {
+    background-color: rgb(255, 214, 125);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(253, 0, 0, 0.2);
+    width: 91%;
+    height: 300px;
+    margin: 0 auto;text-align: center;
+}

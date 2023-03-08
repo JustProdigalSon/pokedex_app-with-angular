@@ -1,0 +1,26 @@
+<div class="pokemonDisplay">
+    <div class="pokemonCard" *ngFor="let pokemon1 of favPokemon">
+        <h3>{{pokemon1[0].name}}</h3>
+        <h3>{{pokemon1[1].id}}</h3>
+    </div>    
+</div>
+
+
+
+
+<div class="pokemonDisplay">
+    <div class="pokemonCard" *ngFor="let pokemon of pokemons">
+        <img [src]="pokemon.sprites.front_default" alt="pokemon">
+        <h3>{{pokemon.name }}</h3>
+        <p>
+            <b>type:</b> {{pokemon.types[0].type.name}}
+        </p>
+        <p>
+            <b>height:</b> {{pokemon.height}}
+        </p>
+        <p>
+            <b>helth:</b> {{pokemon.stats[0].base_stat}}
+        </p>
+        <button (click)="click(pokemon.name,pokemon.height)">ADD <3</button>
+    </div>
+</div>
